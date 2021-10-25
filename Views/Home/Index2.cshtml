@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewBag.Title = "Index2";
+}
+
+<form method="post" action="@Url.Action("ShowCity")">
+    <p>
+        <h4 class="col-lg-3">送貨城市</h4>
+        <select id="送貨city" name="city" class="form-control">
+            <option value="宜蘭市">宜蘭市</option>
+            <option value="台中市">台中市</option>
+            <option value="新竹市">新竹市</option>
+            <option value="高雄市">高雄市</option>
+            <option value="南投縣">南投縣</option>
+            <option value="台北市">台北市</option>
+            <option value="台北縣">台北縣</option>
+            <option value="花蓮市">花蓮市</option>
+            <option value="屏東市">屏東市</option>
+        </select>
+    </p>
+    <p>
+        <h5 class="col-lg-3"></h5>
+        <input type="submit" name="s" id="查詢" value="查詢" class=""/>
+    </p>
+</form>
+

@@ -1,0 +1,19 @@
+﻿@model IEnumerable<prj1081746FinalExam.Models.TableFinalExams1081746>
+@{
+    ViewBag.Title = "Index5";
+}
+
+
+<form method="post" action="@Url.Action("QueryByID")">
+    <div class="panel panel-primary">
+        <div class="panel-heading">資料查詢</div>
+        <div class="panel-body">
+            <p style="text-align:justify">
+                送貨地址包含文字:
+                <input type="text" name="address" value="@ViewBag.address" class="form-control" required />
+            </p>
+            <p><input type="submit" value="查詢" class="btn btn-primary" /></p>
+        </div>
+    </div>
+</form>
+

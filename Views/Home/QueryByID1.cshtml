@@ -1,0 +1,92 @@
+﻿@model IEnumerable<prj1081746FinalExam.Models.TableFinalExams1081746>
+
+@{
+    ViewBag.Title = "QueryByID1";
+
+}
+
+<h2>QueryByID1</h2>
+@if (Model.Count() == 0)
+{
+    <div class="alert alert-info">
+        <strong>無符合之資料</strong>
+    </div>
+}
+else
+{
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.訂單號碼)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.客戶編號)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.員工編號)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.送貨地址)
+            </th>
+
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.訂單號碼)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.客戶編號)
+                </td>
+                <td name="n">
+                    @Html.DisplayFor(modelItem => item.員工編號)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.送貨地址)
+                </td>
+            </tr>
+        }
+
+    </table>
+    if (ViewBag.n == 1)
+    {
+        <img src="~/images/1.gif" />
+    }
+    if (ViewBag.n == 2)
+    {
+        <img src="~/images/2.gif" />
+    }
+    if (ViewBag.n == 3)
+    {
+        <img src="~/images/3.gif" />
+    }
+    if (ViewBag.n == 4)
+    {
+        <img src="~/images/4.gif" />
+    }
+    if (ViewBag.n == 5)
+    {
+        <img src="~/images/5.gif" />
+    }
+    if (ViewBag.n == 6)
+    {
+        <img src="~/images/6.gif" />
+    }
+    if (ViewBag.n == 7)
+    {
+        <img src="~/images/7.gif" />
+    }
+    if (ViewBag.n == 8)
+    {
+        <img src="~/images/8.gif" />
+    }
+    if (ViewBag.n == 9)
+    {
+        <img src="~/images/9.gif" />
+
+    }
+}
